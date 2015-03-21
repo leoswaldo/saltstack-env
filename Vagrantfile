@@ -16,7 +16,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         vb.customize ["modifyvm", :id, "--memory", "512"]
     end 
 
-    master1.vm.provision "shell", path: "scripts/common.sh"
+    #master1.vm.provision "shell", path: "scripts/common.sh"
  
     # set master machine
     config.vm.define 'master1' do |master1|
